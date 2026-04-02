@@ -19,7 +19,7 @@
       </div>
       <div class="container">
         <div class="profile-photo">
-          <img src="/Portfolio/assets/images/YiJouLin_1.JPG" alt="profile picture" />
+          <img src="/Portfolio/assets/images/YiJouLin.JPG" alt="profile picture" />
         </div>
         <h1>YiJou Lin</h1>
         <p class="center">
@@ -174,7 +174,7 @@
                 <h3>3D Reconstruction from Stereo Feature Points</h3>
                 <div class="centered-video">
                   <video controls>
-                    <source src="/Portfolio/assets/images/3D_recon/3D_Reconstruction_demo_video.mp4" type="video/mp4">
+                    <source src="/Portfolio/assets/images/3D_Recon/3D_Reconstruction_demo_video.mp4" type="video/mp4">
                   </video>
                 </div>
 
@@ -202,14 +202,14 @@
                     <strong>Data: </strong>Two images captured from overlapping viewpoints
                     <br><strong>Pipeline: </strong>
                     <div class="project-media">
-                    <img src="/Portfolio/assets/images/3D_recon/pipeline.png" alt="Corresponding Points" />
+                    <img src="/Portfolio/assets/images/3D_Recon/pipeline.png" alt="Corresponding Points" />
                     </div></p> <p>
                     • Camera Calibration: Obtained camera projection matrices (P) using MATLAB’s checkerboard-based calibration toolbox.
                     <br>• Feature Detection: Used SIFT to detect keypoints and extract robust feature descriptors.
                     <br>• Fundamental Matrix Estimation (F): Estimated F using the eight-point algorithm.
                     <br>• Epipolar Constraint: Refined correspondences using epipolar geometry.
                     <div class="project-media">
-                    <img src="/Portfolio/assets/images/3D_recon/correspondent point.png" alt="Corresponding Points" />
+                    <img src="/Portfolio/assets/images/3D_Recon/correspondent point.png" alt="Corresponding Points" />
                     </div></p> 
                     <p>• Pose Recovery (E, R, t): Computed the essential matrix (E) from camera geometry and recovered the relative pose, including rotation (R) and translation (t), between the two views.
                     <br>• Triangulation: Triangulated matched feature points using the recovered pose and projection matrices to reconstruct 3D coordinates.
