@@ -88,18 +88,111 @@ header p {
 }
 
 /* Navigation Styles */
+/* =========================
+   NAV - desktop default
+========================= */
 nav {
-  display: flex;
-  justify-content: space-around;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-sizing: border-box;
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
-  padding: 5px 10px;
-  border-radius: 3px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.2;
+  font-size: 0.95rem;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  box-sizing: border-box;
+  max-width: 100%;
+  min-height: 38px;
+}
+
+nav a:hover {
+  background-color: #0033aa;
+}
+
+/* =========================
+   Tablet
+========================= */
+@media (max-width: 900px) {
+  nav {
+    gap: 8px;
+  }
+
+  nav a {
+    font-size: 0.88rem;
+    padding: 7px 10px;
+  }
+}
+
+/* =========================
+   Mobile
+========================= */
+@media (max-width: 768px) {
+  header .container {
+    width: 94%;
+    max-width: 100%;
+    padding: 0 8px;
+    box-sizing: border-box;
+  }
+
+  nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    width: 100%;
+    margin-top: 14px;
+  }
+
+  nav a {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 8px;
+    font-size: 0.78rem;
+    min-height: 42px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.04);
+  }
+}
+
+/* =========================
+   Small phones
+========================= */
+@media (max-width: 430px) {
+  nav a {
+    font-size: 0.74rem;
+    padding: 9px 6px;
+    min-height: 40px;
+    letter-spacing: 0;
+  }
+}
+
+header,
+header .container,
+nav {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+body,
+header,
+.section,
+.container {
+  overflow-x: hidden;
 }
 
 nav a:hover {
